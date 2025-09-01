@@ -15,135 +15,29 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-warning-subtle p-1 text-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/reno.png" alt="Logo" width="65" height="65" class="d-inline-block align-text-top">
-                </a>
-                <a class="navbar-brand" href="#">FiguraLab</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Catalogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">En Stock</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Figuras
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-outline-warning ms-3">Registrate</button>
-                    <button type="button" class="btn btn-outline-warning ms-3">Inicio seccion</button>
-                    <button type="button" class="btn btn-transparent ms-3">
-                        <img src="img/carro.png" alt="Carro" width="35" height="30">
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
 
-    <footer class="bg-dark" id="tempaltemo_footer">
-        <div class="container">
-            <div class="row">
+    <div id="footer-placeholder"></div>
 
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">FiguraLab</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Donde el diablo perdio el poncho 123
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:010-020-0340">600 600 9950</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <a class="text-decoration-none" href="mailto:info@company.com">Karina.desing@ZMR.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Desde Japon</a></li>
-                        <li><a class="text-decoration-none" href="#">De Autor</a></li>
-                        <li><a class="text-decoration-none" href="#">Anime</a></li>
-                        <li><a class="text-decoration-none" href="#">Videojuegos</a></li>
-                        <li><a class="text-decoration-none" href="#">Comics</a></li>
-                        <li><a class="text-decoration-none" href="#"></a></li>
-                        <li><a class="text-decoration-none" href="#"></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Condiciones</h2>
-                    <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">Sobre Nosotros</a></li>
-                        <li><a class="text-decoration-none" href="#">Sucursales</a></li>
-                        <li><a class="text-decoration-none" href="#">Termino y condiciones</a></li>
-                        <li><a class="text-decoration-none" href="#">Contactanos</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-light mb-4">
-                <div class="col-12 mb-3">
-                    <div class="w-100 my-3 border-top border-light"></div>
-                </div>
-                <div class="col-auto me-auto">
-                    <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
-                            class="fab fa-facebook-f fa-lg fa-fw"></i>
-                        <img src="img/facebook.png" width="20" alt="facebook"></a>
-                    <a class="text-light text-decoration-none" target="_blank" href="http://intagram.com"><i
-                            class="fab fa-facebook-f fa-lg fa-fw"></i>
-                        <img src="img/instagram.png" width="20" alt="facebook"></a>
-                    <a class="text-light text-decoration-none" target="_blank"
-                        href="https://www.youtube.com/@valem_dicrim"><i class="fab fa-facebook-f fa-lg fa-fw"></i>
-                        <img src="img/youtube.png" width="20" alt="facebook"></a>
-                    <a class="text-light text-decoration-none" target="_blank" href="http://google.com"><i
-                            class="fab fa-facebook-f fa-lg fa-fw"></i>
-                        <img src="img/whatsapp.png" width="20" alt="facebook"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-100 bg-black py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-12">
-                        <p class="text-left text-light">
-                            Copyright &copy; 2025 ZMR Design
-                            | Designed by <a rel="sponsored" href="https://www.youtube.com/@valem_dicrim"
-                                target="_blank">Dicrim_Karina</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 
 
-    </footer>
+
+
 
 
 
